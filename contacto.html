@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Good Neighbors International en Nicaragua</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botón de traducción -->
+    <div class="language-button-container">
+        <button id="language-button">Español</button>
+      </div>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Good Neighbors</div>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="areas.html">Áreas de Intervención</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="testimonios.html">Testimonios y Impacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-color">
+        <div class="contacto-content">
+            <h2>Contacto</h2>
+            <p>¡Únete a nuestra causa! Ponte en contacto con nosotros para ser parte del cambio y transformar vidas.</p>
+            <form class="contact-form" action="enviar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Enviar Mensaje</button>
+            </form>
+            <!-- E: Agregar información adicional de contacto como dirección y teléfono -->
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo">Good Neighbors</div>
+            <p>Dirección: Reparto Mirasol Casa A6, Jean Paul Genie, Managua, Managua, Nicaragua</p>
+            <p>Teléfono: 505 85357778</p>
+            <p>Email: info@goodneighbors.org</p>
+        </div>
+    </footer>
+</body>
+</html>

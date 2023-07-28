@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Good Neighbors International en Nicaragua</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Fuentes de Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <!-- Contenido de la página -->
+    <div class="payment-container">
+        <h2>Donación a Good Neighbors International</h2>
+        <p>Por favor, ingresa los detalles de tu donación:</p>
+        <form class="payment-form">
+            <input type="text" name="nombre" placeholder="Nombre en la tarjeta" required>
+            <input type="text" name="numero-tarjeta" placeholder="Número de tarjeta" required>
+            <div class="expiry-cvv">
+                <input type="text" name="fecha-expiracion" placeholder="Fecha de expiración (MM/AA)" required>
+                <input type="text" name="codigo-seguridad" placeholder="CVV" required>
+            </div>
+            <input type="number" name="monto" placeholder="Monto a donar" required>
+            <button type="submit">Realizar Donación</button>
+        </form>
+    </div>
+</body>
+</html>

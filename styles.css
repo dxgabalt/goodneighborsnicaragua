@@ -1,0 +1,406 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-top: 50px; /* Espacio para el botón de traducción */
+}
+
+/* Estilos del botón de traducción */
+#language-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999; /* Asegura que el botón esté por encima de otros elementos */
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav, footer {
+    background-color: #005c99;
+    color: #fff;
+    padding: 10px;
+}
+
+nav .nav-container, footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .nav-container .logo, footer .footer-container .logo {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-container .menu-icon {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav-container .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-container .menu li {
+    margin-right: 20px;
+}
+
+nav .nav-container .menu a {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav .nav-container .menu a:hover {
+    color: #007acc;
+}
+
+/* Estilos del menú desplegable en pantallas pequeñas y/o móviles */
+@media (max-width: 768px) {
+    nav .nav-container .menu {
+        display: none;
+    }
+
+    nav .nav-container .menu.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #005c99;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav .nav-container .menu li {
+        margin: 10px 0;
+    }
+
+    nav .nav-container .menu a {
+        font-size: 17px;
+    }
+
+    nav .nav-container .menu-icon {
+        display: block;
+    }
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+}
+
+/* Estilos para las secciones alternadas */
+.section-blue {
+    background-color: #007acc;
+    color: #fff;
+}
+
+.section-white {
+    background-color: #fff;
+    color: #333;
+}
+
+section h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: inherit;
+}
+
+section p {
+    font-size: 16px;
+    color: inherit;
+}
+
+
+  
+  /* Botón de contacto */
+  .contact-btn {
+    font-family: 'Montserrat', Arial, sans-serif; /* Fuente llamativa para el botón de contacto */
+    font-weight: bold;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0099ff;
+  }
+  
+  /* Proyectos Destacados */
+  .project-card {
+    border: 2.8px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: #005c99;
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-card img {
+    max-width: 35%;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+  
+  .project-card h3 {
+    font-size: 20px;
+    color: #333;
+  }
+
+  /* GALERIA DE NOSOTROS.HTML */
+
+  .project-card2 {
+    border: 2.8px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: #005c99;
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-card2 img {
+    max-width: 25%;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+  
+  .project-card2 h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Testimonios y Impacto */
+  .testimonial {
+    border-left: 4px solid #007acc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .testimonial blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+  }
+  
+  .testimonial p {
+    font-size: 14px;
+    color: #fff;
+  }
+
+/* FOOTER Y DERECHOS RESERVADOS */
+
+
+/* Estilos para los derechos reservados y derecho reservado*/
+.footer-container .copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* Estilos del botón de donaciones */
+.donate-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #ffd700; /* Color dorado */
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-btn:hover {
+    background-color: #f0c40e; /* Color dorado más claro al hacer hover */
+  }
+  
+
+
+  /* Estilos de la pasarela de pago */
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment-container p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .payment-form button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-form button:hover {
+    background-color: #0099ff;
+  }
+  
+
+/* Estilos para el formulario de contacto */
+.contacto-content {
+    text-align: left;
+    padding: 50px;
+}
+
+.contacto-content p {
+    margin-bottom: 60px; /* Agregamos un margen inferior al párrafo */
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-btn {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    color: #007acc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #fff;
+}
+
+.language-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#language-button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#language-button:hover {
+  background-color: #0099ff;
+}
+
+#translated-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+/* SVG LinkedIn y Facebook */
+.social-media-links img {
+  margin-top: 20px;
+  width: 50px;
+  height: 30px;
+  border-radius: 0;
+}
